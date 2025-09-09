@@ -13,11 +13,22 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <!-- FontAwesome JS-->
     <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .floating-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
   </head>
   <body>
-    <article class="resume-wrapper text-center position-relative">
+    <article class="resume-wrapper text-center position-relative" id="download-pdf">
       <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
         <header class="resume-header pt-4 pt-md-0">
           <div class="row">
@@ -47,11 +58,6 @@
                 <div class="secondary-info col-12 col-lg-3 col-md-1 mt-2">
                   <ul class="resume-social list-unstyled">
                     <li class="mb-3">
-                      <a class="text-link" href="https://www.linkedin.com/in/er-gulzarhussain/" target="_blank">
-                      <span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span><span class="d-md-none d-lg-inline-block">er-gulzarhussain</er-gulzarhussain></span>
-                      </a>
-                    </li>
-                    <li class="mb-3">
                       <a class="text-link" href="#">
                         <span class="fa-container text-center me-2">
                           <svg class="svg-inline--fa fa-whatsapp fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="whatsapp" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
@@ -71,10 +77,9 @@
         </header>
         <div class="resume-body p-5">
           <section class="resume-section summary-section mb-5">
-            <h6 class="font-weight-bold pb-3 mb-3">Applying for the Postion: Junior Engineer - Kargil</h6>
             <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
             <div class="resume-section-content">
-              <p class="mb-0">Software Developer with 3 years of experience in full-stack development using Ruby on Rails, specializing in e-commerce platforms and mobile application development. Familiar with cloud platforms like AWS and DigitalOcean through project work. Currently building knowledge in network security, encryption techniques, and secure software architecture
+              <p class="mb-0">Software Developer with 3 years of experience in full-stack development using Ruby on Rails, specializing in e-commerce platforms and mobile application development. Familiar with cloud platforms like AWS and DigitalOcean through project work. Currently building knowledge in network security, encryption techniques, and secure software architecture.
               </p>
             </div>
           </section>
@@ -89,10 +94,9 @@
                       <div class="resume-timeline-item-header mb-2">
                         <div class="d-flex flex-column flex-md-row">
                           <h3 class="resume-position-title font-weight-bold mb-1">Software Developer</h3>
-                          <div class="resume-company-name ms-auto">Bluebash Consulting Private Limited</div>
                         </div>
                         <!--//row-->
-                        <div class="resume-position-time">01 Jun 2023 – 30 May 2025</div>
+                        <div class="resume-position-time"> 1 year 11 months</div>
                       </div>
                       <!--//resume-timeline-item-header-->
                       <div class="resume-timeline-item-desc">
@@ -132,10 +136,9 @@
                       <div class="resume-timeline-item-header mb-2">
                         <div class="d-flex flex-column flex-md-row">
                           <h3 class="resume-position-title font-weight-bold mb-1">Associate Software Developer</h3>
-                          <div class="resume-company-name ms-auto">Bluebash Consulting Private Limited</div>
                         </div>
                         <!--//row-->
-                        <div class="resume-position-time">Oct 2021 – Jun 2023</div>
+                        <div class="resume-position-time">Oct 2021 – Jun 2023 (1 year 9 months)</div>
                       </div>
                       <!--//resume-timeline-item-header-->
                       <div class="resume-timeline-item-desc">
@@ -175,10 +178,9 @@
                       <div class="resume-timeline-item-header mb-2">
                         <div class="d-flex flex-column flex-md-row">
                           <h3 class="resume-position-title font-weight-bold mb-1">Internship – Full-Stack Development </h3>
-                          <div class="resume-company-name ms-auto">Bluebash Consulting Private Limited</div>
                         </div>
                         <!--//row-->
-                        <div class="resume-position-time">Oct 2021 – Apr 2022</div>
+                        <div class="resume-position-time">Oct 2021 – Apr 2022 (6 months)</div>
                       </div>
                       <!--//resume-timeline-item-header-->
                       <div class="resume-timeline-item-desc">
@@ -616,5 +618,10 @@
         </div>
       </div>
     </article>
+    <a href="gulzar_hussain_cv.pdf" class="btn btn-success floating-btn" download data-toggle="tooltip" title="Download CV" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+      </svg>
+    </a>
   </body>
 </html>
